@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>280</width>
-    <height>455</height>
+    <width>296</width>
+    <height>465</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string/>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(25, 42, 50);
@@ -32,6 +32,9 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;This is a simple Tik-Tak-Toe game, Designed and programmed by Zahra Eslami!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(25, 42, 50);
@@ -52,14 +55,18 @@ border-radius: 10px;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(31, 53, 64);
-border-radius: 10px;</string>
+border-radius: 10px;
+font: 700 16pt &quot;Consolas&quot;;
+font-weight: bold; 
+color: rgb(168,190,201); 
+</string>
       </property>
       <property name="text">
        <string/>
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
+    <item row="0" column="3">
      <widget class="QPushButton" name="btn_reset">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -78,36 +85,24 @@ border-radius: 10px;</string>
     </item>
     <item row="1" column="0">
      <widget class="QLineEdit" name="lineEdit">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(25, 42, 50);
 border-radius: 10px;</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
+    <item row="1" column="1" colspan="2">
      <widget class="QLineEdit" name="lineEdit_2">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(25, 42, 50);
 border-radius: 10px;</string>
       </property>
      </widget>
     </item>
-    <item row="1" column="2">
+    <item row="1" column="3">
      <widget class="QLineEdit" name="lineEdit_3">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -152,7 +147,7 @@ border-radius: 10px;</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
+    <item row="2" column="3">
      <widget class="QPushButton" name="btn3">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -203,7 +198,7 @@ border-radius: 10px;</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="2">
+    <item row="3" column="3">
      <widget class="QPushButton" name="btn6">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -254,7 +249,7 @@ border-radius: 10px;</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="2">
+    <item row="4" column="3">
      <widget class="QPushButton" name="btn9">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -272,7 +267,49 @@ border-radius: 10px;</string>
      </widget>
     </item>
     <item row="5" column="0">
-     <widget class="QLineEdit" name="btn_x">
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(25, 42, 50);
+border-radius: 10px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(25, 42, 50);
+border-radius: 10px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(25, 42, 50);
+border-radius: 10px;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="btn_x">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -281,26 +318,34 @@ border-radius: 10px;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(49, 196, 190);
-border-radius: 10px;</string>
+font: 700 9pt &quot;Segoe UI&quot;;
+border-radius: 14px;</string>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>
-    <item row="5" column="1">
-     <widget class="QLineEdit" name="btn_tie">
+    <item row="6" column="1">
+     <widget class="QPushButton" name="btn_tie">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(168,190,201);
-border-radius: 10px;</string>
+border-radius: 14px;
+font: 700 9pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>
-    <item row="5" column="2">
-     <widget class="QLineEdit" name="btn_o">
+    <item row="6" column="3">
+     <widget class="QPushButton" name="btn_o">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -309,7 +354,11 @@ border-radius: 10px;</string>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(242, 178, 55);
-border-radius: 10px;</string>
+border-radius: 14px;
+font: 700 9pt &quot;Segoe UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>
